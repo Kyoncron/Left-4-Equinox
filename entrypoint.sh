@@ -21,6 +21,6 @@ echo "📦 Actualizando servidor de Left 4 Dead 2..."
 
 echo "🚀 Iniciando servidor..."
 #exec "$INSTALL_DIR/srcds_run" -game left4dead2 +map c1m1_hotel -maxplayers 8 -secure server.cfg
-exec "$INSTALL_DIR/srcds_run" -game left4dead2 -console -usercon -usercon +map c1m1_hotel +maxplayers 8 +exec server.cfg +heartbeat 
+exec "$INSTALL_DIR/srcds_run" -game left4dead2 -console -usercon -ip 0.0.0.0 +map c1m1_hotel +maxplayers 8 +exec server.cfg +heartbeat
 
 
