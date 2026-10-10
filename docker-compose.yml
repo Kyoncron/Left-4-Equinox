@@ -14,3 +14,9 @@ services:
     #   - "27015:27015/tcp"
     #   - "27005:27005/udp"
     #   - "27020:27020/udp"
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
